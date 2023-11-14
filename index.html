@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>École de Finance - UI Kit</title>
+  <!-- Intégration de la police depuis Google Fonts -->
+  <!-- Titillium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <!-- Titillium Italic-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,200&display=swap" rel="stylesheet">
+  <!-- Mukta -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  
+  <!-- Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <!-- Intégration du fichier CSS externe -->
+  <link rel="stylesheet" href="main.css">
+  <!-- Integration icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Changer de thème</button>
+  <!-- Les couleurs : -->
+  <h1 class="text"> Voila la Typo en action :</h1>
+  <ul>
+    <li>
+      <h1> Titre h1 </h1>
+      <h2> Titre h2 </h2>
+      <h3> Titre h3</h3>
+      <h4> Titre h4</h4>
+      <h5> Titre h5</h5>
+      <h6> Titre h6</h6>
+      <p> Paragraphe avec du blabla </p>
+      <lead> Une phrase avec plus d'importance</lead>
+      <blockquote> Citations: If you have a garden and a library, you have everything you need.</blockquote>
+    </li>
+  </ul>
+  <h1 class="text"> Voila les boutons en action :</h1>
+  <div class="inline">
+    <ul>
+      <li>
+        <button class="btn primary">Bouton normal couleur primary</button>
+        <button class="btn outline primary">Bouton outline couleur primary</button>
+        <button class="btn sm primary">Petit bouton couleur primary</button>
+        <button class="btn lg primary">Grand bouton  couleur primary</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn secondary">Bouton normal couleur secondary</button>
+        <button class="btn outline secondary">Bouton outline couleur secondary</button>
+        <button class="btn sm secondary">Petit bouton couleur secondary</button>
+        <button class="btn lg secondary">Grand bouton couleur secondary</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn accent">Bouton normal couleur accent</button>
+        <button class="btn outline accent">Bouton outline couleur accent</button>
+        <button class="btn sm accent">Petit bouton couleur accent</button>
+        <button class="btn lg accent">Grand bouton couleur accent</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn warning">Bouton normal couleur warning</button>
+        <button class="btn outline warning">Bouton outline couleur warning</button>
+        <button class="btn sm warning">Petit bouton couleur warning</button>
+        <button class="btn lg warning">Grand bouton couleur warning</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn danger">Bouton normal couleur danger</button>
+        <button class="btn outline danger">Bouton outline couleur danger</button>
+        <button class="btn sm danger">Petit bouton couleur danger</button>
+        <button class="btn lg danger">Grand bouton couleur danger</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn success">Bouton normal couleur success</button>
+        <button class="btn outline success">Bouton outline couleur success</button>
+        <button class="btn sm success">Petit bouton couleur success</button>
+        <button class="btn lg success">Grand bouton couleur success</button>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <button class="btn info">Bouton normal couleur info</button>
+        <button class="btn outline info">Bouton outline couleur info</button>
+        <button class="btn sm info">Petit bouton couleur info</button>
+        <button class="btn lg info">Grand bouton couleur info</button>
+      </li>
+    </ul>
+  </div>
+  <h1>Exemple d'icônes Font Awesome</h1>
+  <div class="icon-row">
+    <i class="fas fa-camera"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-user"></i>
+    <i class="fas fa-list"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-tiktok"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <h1>Formulaire d'Inscription</h1>
+  <form>
+    <label for="username">Nom d'utilisateur :</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" required>
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit" class="btn info">Envoyer</button>
+  </form>
+  <div class="list-group">
+    <div class="list-item">
+      
+      <div class="list-item-content">
+        <h3 class="list-item-title">Titre de l'Élément 1</h3>
+        <p class="list-item-description">Description brève de l'Élément 1.</p>
+      </div>
+    </div>
+
+    <div class="list-item">
+      
+      <div class="list-item-content">
+        <h3 class="list-item-title">Titre de l'Élément 2</h3>
+        <p class="list-item-description">Description brève de l'Élément 2.</p>
+      </div>
+    </div>
+
+    <div class="list-item">
+      
+      <div class="list-item-content">
+        <h3 class="list-item-title">Titre de l'Élément 3</h3>
+        <p class="list-item-description">Description brève de l'Élément 3.</p>
+      </div>
+    </div>
+  </div>
+    <script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+    }
+  </script>
+</body>
+</html>

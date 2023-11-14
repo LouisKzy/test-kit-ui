@@ -1,0 +1,280 @@
+:root {
+  --text: #0a1415;
+  --background: #e0fbff;
+  --primary: #7d443bd3;
+  --secondary: #c3bbf7;
+  --accent: #2204e798;
+  --warning: #e76304;
+  --danger: #e70404;
+  --success: #66e704;
+  --info: #048ce7;
+  --medium-grey: #8a8a8a;
+  --light-grey: #c2c2c2;
+  --hard-grey: #5e5e5e;
+  /* Ajout de variables pour le thème sombre */
+  --dark-text: #fcfdfd;
+  --dark-background: #001b1f;
+  --dark-primary: #acb191;
+  --dark-secondary: #055c6a;
+  --dark-accent: #b5847d;
+  --dark-warning: #e76304;
+  --dark-danger: #e70404;
+  --dark-success: #4b9513;
+  --dark-info: #048ce7;
+}
+.dark-theme {
+  --text: var(--dark-text);
+  --background: var(--dark-background);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --accent: var(--dark-accent);
+  --warning: var(--dark-warning);
+  --danger: var(--dark-danger);
+  --success: var(--dark-success);
+  --info: var(-dark-info);
+}
+
+/* -----------------------------les couleurs  --------------------*/
+
+/* --------------------- Le texte en couleur : ----------------------- */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+.text-medium-grey {
+  color: var(--medium-grey);
+}
+
+.text-light-grey {
+  color: var(--light-grey);
+}
+
+.text-hard-grey {
+  color: var(--hard-grey);
+}
+/* -------------------    Gestion du Body     ---------------------*/
+body {
+  background-color: var(--background);
+  color: var(--text);
+  
+
+  /* gestions des titres */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mukta', sans-serif;
+}
+h1 {
+  font-size: 68px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 44px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 28px;
+}
+h6 {
+  font-size: 24px;
+}
+
+h1.text {
+
+  text-align: center;
+}
+
+/* ----------------------   Gestion parapgraphe   ----------------*/
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+lead {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-style: italic; /* Mettre le texte en italique */
+}
+
+/* ----------------      Gestion éléments Spéciaux   -----------------*/
+
+blockquote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+ul ol li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* ---------------       Styles pour les boutons  ---------------------- */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn.sm {
+  padding: 5px 10px;
+}
+.btn.lg {
+  padding: 15px 30px;
+}
+
+.btn.outline {
+  background: none;
+  border: 2px solid;
+}
+
+
+.primary {
+  background-color: var(--primary);
+  color: var(--text);
+}
+.btn.outline.primary {
+  background-color: none;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+.btn.outline.secondary {
+  background-color: none;
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.accent {
+  background-color: var(--accent);
+  color: var(--text);
+}
+.btn.outline.accent {
+  background-color: none;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.warning {
+  background-color: var(--warning);
+  color: var(--text);
+}
+.btn.outline.warning {
+  background-color: none;
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.danger {
+  background-color: var(--danger);
+  color: var(--text);
+}
+.btn.outline.danger {
+  background-color: none;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.success {
+  background-color: var(--success);
+  color: var(--text);
+}
+.btn.outline.success {
+  background-color: none;
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.info {
+  background-color: var(--info);
+  color: var(--text);
+}
+.btn.outline.info {
+  background-color: none;
+  border-color: var(--info);
+  color: var(--info);
+}
+
+.inline {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--medium-grey);
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--medium-grey);
+  border-radius: 5px;
+  background-color: white; /
+}
+
+option {
+  padding: 10px;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--medium-grey);
+  border-radius: 5px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 5px;
+}
+
+
+label {
+  font-weight: bold;
+}
